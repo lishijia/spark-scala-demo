@@ -1,4 +1,4 @@
-package com.jiarong.spark.demo.sort
+package lishijia.spark.demo.sort
 
 class SecondarySortKey(val first:Int, val second:Int)
   extends Ordered [SecondarySortKey] with Serializable{

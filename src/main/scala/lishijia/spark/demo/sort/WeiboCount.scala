@@ -1,4 +1,5 @@
-package com.jiarong.spark.demo.sort
+package lishijia.spark.demo.sort
+
 import org.apache.spark.{SparkConf, SparkContext}
 
 object WeiboCount {
