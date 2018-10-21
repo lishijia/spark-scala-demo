@@ -1,6 +1,4 @@
-package com.jiarong.spark.demo.wordcount
-
-import org.apache.spark.{SparkConf, SparkContext}
+package lishijia.spark.demo.wordcount;
 
 /**
   * lishijia
