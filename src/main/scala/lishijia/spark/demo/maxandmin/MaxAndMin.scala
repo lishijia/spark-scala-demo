@@ -1,4 +1,4 @@
-package lishijia.spark.demo.sort
+package lishijia.spark.demo.maxandmin
 
 import org.apache.spark.{SparkConf, SparkContext}
 object MaxAndMin {
@@ -10,7 +10,7 @@ object MaxAndMin {
     val sc = new SparkContext(conf)
 
     val lines = sc.textFile("hdfs://hadoop100:9000/jiarong/input/spark/maxandmin/*")
-    lines.filter(x=>x.trim().length>0).map(x=>("", x.trim.toInt)).groupByKey().map(x=>{
+    lines.filter(x=>x.trim().length>0).map(x=>("tmpkey", x.trim.toInt)).groupByKey().map(x=>{
       var index =0
       var min = 0;
       var max =0
@@ -18,7 +18,7 @@ object MaxAndMin {
         if(index==0){
           min=num
           max=num
-          index = index + 1
+          index += 1
         }
 
         if(num<min){
