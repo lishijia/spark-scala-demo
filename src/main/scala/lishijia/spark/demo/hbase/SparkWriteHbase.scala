@@ -1,4 +1,4 @@
-package com.jiarong.spark.demo.hbase
+package lishijia.spark.demo.hbase
 
 import org.apache.hadoop.hbase.client.{Put, Result}
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable
