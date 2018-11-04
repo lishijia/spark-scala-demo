@@ -10,3 +10,6 @@ libraryDependencies += "org.apache.spark" %% "spark-core" % "2.1.0"
 libraryDependencies += "org.apache.hbase" % "hbase-client" % "1.1.12"
 libraryDependencies += "org.apache.hbase" % "hbase-common" % "1.1.12"
 libraryDependencies += "org.apache.hbase" % "hbase-server" % "1.1.12"
+libraryDependencies += "com.huaban" % "jieba-analysis" % "1.0.2"
+// https://mvnrepository.com/artifact/org.apache.spark/spark-sql
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.1.1"
